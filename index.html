@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web player: música para todas as pessoas</title>
+    <link rel="shortcut icon" href="./assets/spotify.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <nav class="sidebar-nav-wrapper">
+      <div class="sidebar-nav-wrapper--top">
+        <img class="logo" src="/assets/spotify-logo.png" alt="Spotify logo" />
+        <div class="sidebar-nav-wrapper--top--items">
+          <a href="#"
+            ><span class="material-symbols-outlined navbar-icons"> home </span
+            >Início</a
+          >
+          <a href="#"
+            ><span class="material-symbols-outlined navbar-icons"> search </span
+            >Buscar</a
+          >
+        </div>
+      </div>
+      <div class="sidebar-nav-wrapper--middle">
+        <div class="sidebar-nav-wrapper--middle--wrapper">
+          <div>
+            <label class="sidebar-nav-wrapper--middle--lib--button" for=""
+              ><span class="material-symbols-outlined"> library_music </span>Sua
+              biblioteca</label
+            >
+            <div class="sidebar-nav-wrapper--middle--buttons">
+              <button>
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAABWUlEQVR4nO3bsWoCQRhF4Y2dPnwIGnEfMWlimtiesDiF6CxsMewk3vPBNiHg4uEm1T8MkiRJkiQtBWwW/7LaAbbAO/BdnsP0M7/jlQBvPHo1wHoBPioBPg2wXoAqAxggAzN6v1cMDGCAaLgAA0TDBRggGi7AANFwAQaIhgswQDRcgAGi4QIMEA0XYIBouAADRMMFGCAaLsAA0XABBoiGCzBANBIXAOyAYzkJUt25nE61P5cCxpkP1aOx9Ze/AS6VD1LdT9MLTgN0DlAi+CdouVPTL//mNvdQ/tGo7gvYP/3NMjN6v1cMDGCAaLgAA0TDBRggGi7AANFwAQaIhgswQDRcgAGi4QIMEA0XYIBouAADRMMFGCAaLsAA0XABBoiGCzBANFyAAaLhAroHONeOIzq/Vg6up6D39r3fKwbXc6mxHMNNz+npz4L+IuBlenq/hyRJkiRp+D9+AWoJqM1CZpcrAAAAAElFTkSuQmCC"
+                />
+              </button>
+              <button>
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAABGklEQVR4nO3cMU7DUBAEUFc5BuI6NDTQOFdHHIQEaahSJl08H+17J1jPfEexbO22AQAAAAAAAMA/lOQ1yXt7jpGSvCT5TvKb5NyeZ2r4N0oohn+jhAPCPyX5yn3XJJ9PH2SyJB9JLg9KcCcoYYC4E/qihL4ooS9K6IsS+qKEviihL0roixL6lLAAJSxACQtQwgKUsAAlLEAJC1DCApYs4cEwU10PfdHfvtpFXQ77Aq99pQv7SfKmgB4FFPkJKvK1Xflv6P60ASaL8HuEXyT8IuEXCb9I+EXCLxJ+kfCFP1M84Qp/pDj5wh8pTr7wR4qTL/yR4uRXwz9ZV7P2wqa9Pd/klWV7e67JS/v29jwjxdpKAAAAAAAAALaeP8+hf/E2lUNjAAAAAElFTkSuQmCC"
+                />
+              </button>
+            </div>
+          </div>
+          <div>
+            <ul class="sidebar-nav-wrapper--middle--slide--list">
+              <li><button>Playlists</button></li>
+              <li><button>Artistas</button></li>
+              <li><button>Álbuns</button></li>
+              <li><button>Podcasts e Programas</button></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sidebar-nav-middle--contents">
+          <div class="sidebar-nav-wrapper--middle--search--wrapper">
+            <button class="sidebar-nav-wrapper--middle--search">
+              <span class="material-symbols-outlined"> search </span>
+            </button>
+            <button class="sidebar-nav-wrapper--middle--recents">
+              <p>Recentes</p>
+              <span class="material-symbols-outlined">
+                format_list_bulleted
+              </span>
+            </button>
+          </div>
+          <div>
+            <div class="content-button-container">
+              <button class="content-button-wrapper">
+                <div class="content-button-wrapper--image--container">
+                  <img src="/assets/likedsongs.jpg" />
+                </div>
+                <div class="content-button-wrapper--desc">
+                  <h3>Músicas Curtidas</h3>
+                  <div>
+                    <span class="material-symbols-rounded"> push_pin </span>
+                    <p>Playlist ● 49 músicas</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="content-button-container">
+              <button class="content-button-wrapper">
+                <div class="content-button-wrapper--saved">
+                  <span class="material-symbols-rounded"> bookmark </span>
+                </div>
+                <div class="content-button-wrapper--desc">
+                  <h3>Seus episódios</h3>
+                  <div>
+                    <span class="material-symbols-rounded"> push_pin </span>
+                    <p>Episódios salvos e baixados</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="content-button-container">
+              <button class="content-button-wrapper">
+                <div class="content-button-wrapper--image--container">
+                  <img src="/assets/fj.png" />
+                </div>
+                <div class="content-button-wrapper--desc">
+                  <h3>buzzin in yo ear like a headphone static</h3>
+                  <div>
+                    <span class="material-symbols-rounded"> push_pin </span>
+                    <p>Playlist ● zezão</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="content-button-container">
+              <button class="content-button-wrapper">
+                <div class="content-button-wrapper--image--container">
+                  <img src="/assets/lcu.png" />
+                </div>
+                <div class="content-button-wrapper--desc">
+                  <h3>Last Chance U - Basketball Season 1-2</h3>
+                  <div>
+                    <p>Playlist ● Quinten Teunissen</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="content-button-container">
+              <button class="content-button-wrapper">
+                <div class="content-button-wrapper--image--container">
+                  <img src="/assets/cbum.png" />
+                </div>
+                <div class="content-button-wrapper--desc">
+                  <h3>Workout</h3>
+                  <div>
+                    <p>Playlist ● Felix</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="content-button-container">
+              <button class="content-button-wrapper">
+                <div class="content-button-wrapper--image--container">
+                  <img src="/assets/lcu2.jpg" />
+                </div>
+                <div class="content-button-wrapper--desc">
+                  <h3>Last Chance U Season 1-5</h3>
+                  <div>
+                    <p>Playlist ● Quinten Teunissen</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="content-button-container">
+              <button class="content-button-wrapper">
+                <div class="content-button-wrapper--image--container">
+                  <img src="/assets/hnmm.jpg" />
+                </div>
+                <div class="content-button-wrapper--desc">
+                  <h3>Hoje no Mundo Militar</h3>
+                  <div>
+                    <p>Podcast ● Hoje no Mundo Militar</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="content-button-container">
+              <button class="content-button-wrapper">
+                <div class="content-button-wrapper--image--container">
+                  <img src="/assets/retro.png" />
+                </div>
+                <div class="content-button-wrapper--desc">
+                  <h3>As suas musicas mais ouvidas em 2023</h3>
+                  <div>
+                    <p>Podcast ● Spotify</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="content-button-container">
+              <button class="content-button-wrapper">
+                <div class="content-button-wrapper--image--container">
+                  <img src="/assets/lutz.png" />
+                </div>
+                <div class="content-button-wrapper--desc">
+                  <h3>Lutz Podcast</h3>
+                  <div>
+                    <p>Podcast ● Lutz Podcast</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="content-button-container">
+              <button class="content-button-wrapper">
+                <div class="content-button-wrapper--image--container">
+                  <img src="/assets/ed.jpeg" />
+                </div>
+                <div class="content-button-wrapper--desc">
+                  <h3>Eslen Podcast</h3>
+                  <div>
+                    <p>Podcast ● Eslen Delanogare</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="content-button-container">
+              <button class="content-button-wrapper">
+                <div class="content-button-wrapper--image--container">
+                  <img src="/assets/dvs.jpeg" />
+                </div>
+                <div class="content-button-wrapper--desc">
+                  <h3>Dev Sem Fronteiras</h3>
+                  <div>
+                    <p>Podcast ● Alura</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="content-button-container">
+              <button class="content-button-wrapper">
+                <div class="content-button-wrapper--image--container">
+                  <img src="/assets/csf.jpg" />
+                </div>
+                <div class="content-button-wrapper--desc">
+                  <h3>Ciência Sem Fim</h3>
+                  <div>
+                    <p>Podcast ● Estúdios Flow</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="content-button-container">
+              <button class="content-button-wrapper">
+                <div class="content-button-wrapper--image--container">
+                  <img src="/assets/p63.jpeg" />
+                </div>
+                <div class="content-button-wrapper--desc">
+                  <h3>Paciente 63</h3>
+                  <div>
+                    <p>Podcast ● Spotify Studios</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="content-button-container">
+              <button class="content-button-wrapper">
+                <div class="content-button-wrapper--image--container">
+                  <img src="/assets/sinp.jpeg" />
+                </div>
+                <div class="content-button-wrapper--desc">
+                  <h3>Sinapse</h3>
+                  <div>
+                    <p>Podcast ● Ciência Todo Dia</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="content-button-container">
+              <button class="content-button-wrapper">
+                <div class="content-button-wrapper--image--container">
+                  <img src="/assets/fgp.jpg"/>
+                </div>
+                <div class="content-button-wrapper--desc">
+                  <h3>Fala Glauber Podcast</h3>
+                  <div>
+                    <p>Podcast ● Glauber Mendonça</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="content-button-container">
+              <button class="content-button-wrapper">
+                <div class="content-button-wrapper--image--container">
+                  <img src="/assets/lcub.jpg"/>
+                </div>
+                <div class="content-button-wrapper--desc">
+                  <h3>Last Chance U BASKETBALL &#127936;</h3>
+                  <div>
+                    <p>Playlist ● Görkem Özkeskin</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+        <section class="main-header">
+          <div>
+            <span class="material-symbols-outlined"> keyboard_arrow_left </span>
+            <span class="material-symbols-outlined right">
+              keyboard_arrow_left
+            </span>
+          </div>
+          <div class="main-header--right--buttons--wrapper">
+            <button class="main-header--right--buttons">
+              <span class="material-symbols-outlined icon"> download </span>
+              Instalar aplicativo
+            </button>
+            <button class="main-header--right--buttons">
+              <span class="material-symbols-outlined"> notifications </span>
+            </button>
+            <button class="main-header--right--buttons">
+              <img
+                src="https://i.scdn.co/image/ab67757000003b82045ed297af4780add7d1db46"
+                alt="minha foto"
+              />
+            </button>
+          </div>
+        </section>
+        <section class="main-content-container">
+          <section class="main-content">
+            <div class="main-content-header">
+              <h1>Boa Tarde</h1>
+            </div>
+            <section class="main-content-most-accessed">
+              <button class="main-content-most-accessed--button">
+                <img src="/assets/likedsongs.jpg" />Músicas Curtidas
+              </button>
+              <button class="main-content-most-accessed--button">
+                <img src="/assets/lcu.png" />Last Chance U - Basketball Season 1-2
+              </button>
+              <button class="main-content-most-accessed--button">
+                <img src="/assets/mdc3.png" />Midnight Club 3 DUB Edition REMIX
+              </button>
+              <button class="main-content-most-accessed--button">
+                <img src="/assets/fj.png" />buzzin in yo ear like a headphone static
+              </button>
+              <button class="main-content-most-accessed--button">
+                <img src="/assets/weekdiscover.png" />Descobertas da semana
+              </button>
+              <button class="main-content-most-accessed--button">
+                <img src="/assets/lutz.png" />Lutz Podcast
+              </button>
+            </section>
+            <section class="main-content-your-programs">
+              <div class="main-content-your-programs--header">
+                <a href="#" class="main-content-your-programs--title"
+                  >Spotify original podcasts</a
+                >
+                <a href="#" class="main-content-your-programs--showmore"
+                  >Mostrar tudo</a
+                >
+              </div>
+              <section class="daily-mix-wrapper">
+                <div>
+                  <button class="daily-mix-button">
+                    <img src="./assets/podpah.png">
+                    <div>
+                      <h3>Podpah</h3>
+                      <p>Podpah</p>
+                    </div>
+                  </button>
+                </div>
+                <div>
+                  <button class="daily-mix-button">
+                    <img src="./assets/pwc.png">
+                    <div>
+                      <h3>PeeWeeCast</h3>
+                      <p>Canal PeeWee</p>
+                    </div>
+                  </button>
+                </div>
+                <div>
+                  <button class="daily-mix-button">
+                    <img src="./assets/cdm.png">
+                    <div>
+                      <h3>Café da Manhã</h3>
+                      <p>Spotify Studios</p>
+                    </div>
+                  </button>
+                </div>
+                <div>
+                  <button class="daily-mix-button">
+                    <img src="./assets/pnp.png">
+                    <div>
+                      <h3>Psicologia na Prática</h3>
+                      <p>Alana Anijar</p>
+                    </div>
+                  </button>
+                </div>
+                <div>
+                  <button class="daily-mix-button">
+                    <img src="./assets/fel.png">
+                    <div>
+                      <h3>França e o Labirinto</h3>
+                      <p>Spotify Studios</p>
+                    </div>
+                  </button>
+                </div>
+              </section>
+            </section>
+            <section class="main-content-your-programs">
+              <div class="main-content-your-programs--header">
+                <a href="#" class="main-content-your-programs--title"
+                  >Feito para zezão.</a
+                >
+                <a href="#" class="main-content-your-programs--showmore"
+                  >Mostrar tudo</a
+                >
+              </div>
+              <section class="daily-mix-wrapper">
+                <div>
+                  <button class="daily-mix-button">
+                    <img src="./assets/dm1.png">
+                    <div>
+                      <h3>Daily Mix 1</h3>
+                      <p>Drake, Lil Durk, Baby Keem e mais</p>
+                    </div>
+                  </button>
+                </div>
+                <div>
+                  <button class="daily-mix-button">
+                    <img src="./assets/dm2.png">
+                    <div>
+                      <h3>Daily Mix 2</h3>
+                      <p>$uicideboys$, KYSLINGO, Xavier Wulf e mais</p>
+                    </div>
+                  </button>
+                </div>
+                <div>
+                  <button class="daily-mix-button">
+                    <img src="./assets/dm3.png">
+                    <div>
+                      <h3>Daily Mix 3</h3>
+                      <p>Jace!, LUCKI, Your Stepdad e mais</p>
+                    </div>
+                  </button>
+                </div>
+                <div>
+                  <button class="daily-mix-button">
+                    <img src="./assets/dm4.png">
+                    <div>
+                      <h3>Daily Mix 4</h3>
+                      <p>Devilish Trio, Freddie Dredd, Jazz Playaz e mais</p>
+                    </div>
+                  </button>
+                </div>
+                <div>
+                  <button class="daily-mix-button">
+                    <img src="./assets/dm5.png">
+                    <div>
+                      <h3>Daily Mix 5</h3>
+                      <p>Yeat, KANKAN, UnoTheActivist e mais</p>
+                    </div>
+                  </button>
+                </div>
+              </section>
+            </section>
+            <section class="main-content-your-programs">
+              <div class="main-content-your-programs--header">
+                <a href="#" class="main-content-your-programs--title"
+                  >Popular entre ouvintes de Dev Sem Fronteiras</a
+                >
+                <a href="#" class="main-content-your-programs--showmore"
+                  >Mostrar tudo</a
+                >
+              </div>
+              <section class="daily-mix-wrapper">
+                <div>
+                  <button class="daily-mix-button">
+                    <img src="./assets/sd.png">
+                    <div>
+                      <h3>Scuba Ponto Dev</h3>
+                      <p>Alura</p>
+                    </div>
+                  </button>
+                </div>
+                <div>
+                  <button class="daily-mix-button">
+                    <img src="./assets/bdev.png">
+                    <div>
+                      <h3>Bolha Dev</h3>
+                      <p>Alura</p>
+                    </div>
+                  </button>
+                </div>
+                <div>
+                  <button class="daily-mix-button">
+                    <img src="./assets/lc.png">
+                    <div>
+                      <h3>Lucas Caton</h3>
+                      <p>Lucas Caton</p>
+                    </div>
+                  </button>
+                </div>
+                <div>
+                  <button class="daily-mix-button">
+                    <img src="./assets/tpa.png">
+                    <div>
+                      <h3>TPA Podcast: Carreira Internacional & Tech</h3>
+                      <p>Gabriel Rubens</p>
+                    </div>
+                  </button>
+                </div>
+                <div>
+                  <button class="daily-mix-button">
+                    <img src="./assets/fdn.png">
+                    <div>
+                      <h3>Felipe Deschamps News</h3>
+                      <p>Robson Antonio Lima de Mendonça</p>
+                    </div>
+                  </button>
+                </div>
+              </section>
+            </section>
+          </section>
+    </main>
+    <footer>
+      <section>
+        <div class="footer-description">
+          <h3>Prévia do spotify de José Victor</h3>
+          <p>Registre-se para ter acesso a estes e muito mais conteúdos.</p>
+        </div>
+        <button>Registre-se de graça</button>
+      </section>
+    </footer>
+  </body>
+</html>
